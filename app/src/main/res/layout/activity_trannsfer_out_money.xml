@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_trannsfer_out_money"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.jiuyuhulian.lotteryshop.function.TransferOutMoneyActivity">
+
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:background="@color/white"
+        app:centerText="提现"
+        app:centerTextColor="@color/three"
+        app:centerTextSize="54px"
+        app:isShowLeft="true"
+        app:leftSrc="@drawable/xgmm_return"
+        app:rightTopText="提现记录"></com.jiuyuhulian.lotteryshop.view.TopBar>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rll_add_idcard"
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/tx_yhbj"
+        android:gravity="center_vertical"
+        android:paddingLeft="44px"
+        android:paddingRight="44px"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yhk_tianjia" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44px"
+            android:layout_toRightOf="@id/img"
+            android:text="添加银行卡"
+            android:textColor="@color/three"
+            android:textSize="40px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/yhk_enter" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/all_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/tx_yhbj"
+        android:paddingBottom="22px"
+        android:visibility="gone"
+        android:paddingTop="22px">
+
+        <ImageView
+            android:id="@+id/bank_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26px"
+            android:src="@drawable/tx_gsyh" />
+
+        <TextView
+            android:id="@+id/bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44px"
+            android:layout_toRightOf="@id/bank_img"
+            android:text="工商银行（尾号1234）"
+            android:textColor="@color/three"
+            android:textSize="44px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/bank_name"
+            android:layout_below="@id/bank_name"
+            android:layout_marginTop="24px"
+            android:text="最多支持2000元人民币提现"
+            android:textColor="@color/nine"
+            android:textSize="38px" />
+
+        <ImageView
+            android:id="@+id/bank_samll_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/tx_enter" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/tx_jinebj"
+        android:paddingBottom="34px"
+        android:paddingLeft="30px"
+        android:paddingTop="30px">
+
+        <TextView
+            android:id="@+id/tv_tixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现金额"
+            android:textColor="@color/three"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/et_tixian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_tixian"
+            android:layout_marginTop="46px"
+            android:background="@null"
+            android:hint="￥100"
+            android:inputType="number"
+            android:textColor="@color/three"
+            android:textSize="48px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/et_tixian"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40px"
+            android:src="@drawable/tx_delete"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/subline"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@id/et_tixian"
+            android:layout_marginTop="22px"
+            android:background="@drawable/tx_fgx">
+
+        </View>
+
+        <TextView
+            android:id="@+id/tv_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/subline"
+            android:layout_marginTop="38px"
+            android:text="可用余额：10元"
+            android:textColor="@color/six"
+            android:textSize="38px" />
+
+        <TextView
+            android:id="@+id/btn_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/subline"
+            android:layout_marginRight="38px"
+            android:layout_marginTop="38px"
+            android:background="@null"
+            android:text="全部提现"
+            android:textColor="@color/btn_orange" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/tx_khhdz_bj"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="开户行地址"
+            android:textColor="@color/three"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/bank_adress"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="如xx银行xx支付(必填)"
+            android:paddingLeft="46px"
+            android:textColor="@color/nine"
+            android:textSize="34px" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_tixian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90px"
+        android:background="@drawable/cz_anniu_bj"
+        android:text="提现"
+        android:textColor="@color/white"
+        android:textSize="52px" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/updatPwd_bg"
+    android:orientation="vertical"
+    tools:context="com.jiuyuhulian.lotteryshop.function.AddAddressActivity">
+
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:background="@color/white"
+        app:centerText="新增地址"
+        app:centerTextColor="@color/three"
+        app:centerTextSize="54px"
+        app:isShowLeft="true"
+        app:isShowRightText="true"
+        app:leftSrc="@drawable/xgmm_return"
+        app:rightTopText="保存"></com.jiuyuhulian.lotteryshop.view.TopBar>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="44px"
+            android:paddingLeft="44px"
+            android:paddingTop="70px"
+            android:text="姓名："
+            android:textColor="@color/three"
+            android:textSize="46px"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:textSize="46px"
+            android:textColor="@color/three"
+            android:background="@null" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="44px"
+        android:background="@drawable/xzdz_fgx">
+
+    </View>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="44px"
+            android:paddingLeft="44px"
+            android:paddingTop="44px"
+            android:text="电话："
+            android:textColor="@color/three"
+            android:textSize="46px" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:textSize="46px"
+            android:textColor="@color/three"
+            android:background="@null"
+            android:inputType="phone" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="44px"
+        android:background="@drawable/xzdz_fgx">
+
+    </View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/arl_select_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="44px"
+            android:paddingLeft="44px"
+            android:paddingTop="44px"
+            android:text="省市区："
+            android:textColor="@color/three"
+            android:textSize="46px" />
+
+        <ImageView
+            android:id="@+id/iv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:src="@drawable/xzdz_address" />
+
+        <TextView
+            android:id="@+id/tv_detail_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/iv_address"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:layout_toRightOf="@id/tv_adress"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:textColor="@color/three"
+            android:textSize="46px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="44px"
+        android:background="@drawable/xzdz_fgx"></View>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="44px"
+            android:paddingLeft="44px"
+            android:paddingTop="44px"
+            android:text="详细地址："
+            android:textColor="@color/three"
+            android:textSize="46px" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:background="@null"
+            android:hint="街道、楼牌号等"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:textColorHint="@color/nine"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="44px"
+        android:background="@drawable/xzdz_fgx">
+
+    </View>
+</com.zhy.autolayout.AutoLinearLayout>

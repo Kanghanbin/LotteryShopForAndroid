@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jiuyuhulian.lotteryshop">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".LotteryShopApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/jikaicai"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:icon">
+
+        <!-- 屏幕设计尺寸 -->
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".engine.exchange.ExchangeHomeActivity" />
+        <activity
+            android:name=".engine.exchange.activity.HandActivity"
+            android:label="@string/title_activity_hand" />
+        <activity
+            android:name=".function.EnterTicketActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".function.ShoppingCarActivity" />
+        <activity
+            android:name=".function.StockQueryActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".function.OrderManagerActivity" />
+        <activity android:name=".function.OrderSearchActivity" />
+        <activity android:name=".function.TicketActiveActivity" />
+        <activity
+            android:name=".function.TransferInMoneyActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".function.ChargeRecordsActivity" />
+        <activity android:name=".function.TransferOutMoneyActivity" />
+        <activity
+            android:name=".function.ExchangeDetailActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+
+        </activity>
+        <activity android:name=".activity.RegistActivity" />
+        <activity android:name=".activity.ForgotPwdActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity android:name=".activity.UpdatePwdActivity" />
+        <activity android:name=".activity.UpdateSaftyPwdActivity" />
+        <activity android:name=".function.FinanceSettingActivity" />
+        <activity android:name=".function.VertifyMessageActivity" />
+        <activity android:name=".function.QueryInterflowActivity" />
+        <activity android:name=".function.BankCardListActivity" />
+        <activity android:name=".function.VerifyPayPwdActivity" />
+        <activity android:name=".function.TicketNumtActiveActivity" />
+        <activity android:name=".function.SettlementCenterActivity" />
+        <activity android:name=".function.AddAddressActivity" />
+        <activity android:name=".function.ConfirmPayActivity" />
+        <activity android:name=".engine.exchange.activity.SubTotalActivity" />
+        <activity android:name=".activity.WelcomeActivity" />
+        <activity android:name=".activity.ApplicationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".function.AddressListActivity" />
+        <activity android:name=".function.DuijiangLimitActivity" />
+        <activity android:name=".function.AddIdCard1Activity" />
+        <activity android:name=".function.AddIdCard2Activity" />
+        <activity android:name="com.uuzuche.lib_zxing.activity.HelpActivity" />
+        <activity android:name=".function.BankDetailActivity" />
+        <activity android:name=".function.BankChargeActivity" />
+        <activity android:name=".function.LotteryDetailsActivity" />
+        <activity android:name=".function.OperatorListActivity" />
+        <activity android:name=".function.AddOperatorActivity"></activity>
+        <activity android:name=".function.CashSearchActivity"></activity>
+    </application>
+
+</manifest>

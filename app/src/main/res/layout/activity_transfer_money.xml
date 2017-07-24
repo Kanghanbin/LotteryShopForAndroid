@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_transfer_money"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:background="@color/white"
+        app:centerText="充值"
+        app:centerTextColor="@color/three"
+        app:centerTextSize="54px"
+        app:isShowLeft="true"
+        app:leftSrc="@drawable/xgmm_return"
+        app:rightTopText="充值记录"></com.jiuyuhulian.lotteryshop.view.TopBar>
+
+    <RadioGroup
+        android:id="@+id/rg_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <RadioButton
+            android:id="@+id/rb_wx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:background="@drawable/wx_selector"
+            android:button="@null"
+            android:paddingLeft="234px"
+            android:text="微信充值"
+            android:textColor="@color/black"
+            android:checked="true"
+            android:textSize="44px" />
+
+        <RadioButton
+            android:id="@+id/rb_zfb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:background="@drawable/zfb_selector"
+            android:button="@null"
+            android:paddingLeft="234px"
+            android:text="支付宝充值"
+            android:textColor="@color/black"
+            android:textSize="44px" />
+
+        <RadioButton
+            android:id="@+id/rb_yhk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:background="@drawable/yhk_selector"
+            android:button="@null"
+            android:paddingLeft="234px"
+            android:text="银行卡充值"
+            android:textColor="@color/black"
+            android:textSize="44px" />
+    </RadioGroup>
+
+    <com.jiuyuhulian.lotteryshop.view.ChooseMoneyLayout
+        android:id="@+id/money_chose_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44px"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="44px"
+        android:numColumns="4"
+        android:paddingRight="40px"
+        android:verticalSpacing="20px">
+
+    </com.jiuyuhulian.lotteryshop.view.ChooseMoneyLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/cz_jine"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44px"
+            android:text="金额"
+            android:textColor="@color/black"
+            android:textSize="44px" />
+
+        <EditText
+            android:id="@+id/et_charge_Money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="72px"
+            android:background="@null"
+            android:hint="请输入充值金额"
+            android:inputType="number"
+            android:textColor="@color/nine"
+            android:textSize="44px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <Button
+        android:id="@+id/btn_charge"
+        android:layout_width="872px"
+        android:layout_height="105px"
+        android:layout_marginTop="90px"
+        android:background="@drawable/cz_anniu_bj"
+        android:text="充值"
+        android:textColor="@color/white"
+        android:textSize="52px" />
+</com.zhy.autolayout.AutoLinearLayout>

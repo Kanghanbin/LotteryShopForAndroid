@@ -1,0 +1,106 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <com.zhy.autolayout.AutoFrameLayout
+
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/search_et_input"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/ss_bj"
+                android:drawableLeft="@drawable/ss_icon"
+                android:drawablePadding="30px"
+                android:hint="商品名称/订单号"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingLeft="32px"
+                android:textColorHint="@color/nine"
+                android:textSize="36px" />
+
+            <ImageView
+                android:id="@+id/search_iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20px"
+                android:src="@drawable/tx_delete"
+                android:visibility="gone" />
+        </com.zhy.autolayout.AutoFrameLayout>
+
+        <Button
+            android:id="@+id/search_btn_back"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="取消"
+            android:textColor="@color/six" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@drawable/ss_fgx">
+
+    </View>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:drawablePadding="20px"
+            android:text="历史记录"
+            android:textColor="@color/three" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/wddd_fgx" />
+
+        <ListView
+            android:id="@+id/search_lv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_marginBottom="87px"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:visibility="visible"></ListView>
+        <TextView
+            android:id="@+id/clear_history"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="40px"
+            android:text="清空历史记录"
+            android:drawablePadding="18px"
+            android:drawableLeft="@drawable/xj_delete"/>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

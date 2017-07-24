@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_shopping_car"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/updatPwd_bg"
+    android:orientation="vertical">
+
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:background="@color/white"
+        app:centerText="确认支付"
+        app:centerTextColor="@color/three"
+        app:centerTextSize="54px"
+        app:isShowLeft="true"
+        app:leftSrc="@drawable/xgmm_return"></com.jiuyuhulian.lotteryshop.view.TopBar>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/arl_freight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:background="@color/white"
+        android:paddingBottom="23px"
+        android:paddingLeft="40px"
+        android:paddingRight="44px"
+        android:paddingTop="23px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运费"
+            android:textColor="@color/black"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/freight_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="10.00元"
+            android:textColor="@color/black"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arl_freight"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <!--beforeDescendants：viewgroup会优先其子类控件而获取到焦点-->
+        <!--afterDescendants：viewgroup只有当其子类控件不需要获取焦点时才获取焦点-->
+        <!--blocksDescendants：viewgroup会覆盖子类控件而直接获得焦点-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+
+            <TextView
+                android:id="@+id/tv_payKind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/arl_freight"
+                android:paddingLeft="40px"
+                android:paddingTop="30px"
+                android:textColor="@color/three"
+                android:text="选择支付方式" />
+
+
+            <RadioGroup
+                android:id="@+id/rg_channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/tv_payKind"
+                android:paddingLeft="40px"
+                android:paddingRight="40px">
+                <RadioButton
+                    android:id="@+id/rb_ye"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:background="@drawable/ye_confirm_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="178px"
+                    android:textColor="@color/wallet_balance"
+                    android:text="当前可可用余额：2000000.00元"
+                    android:textSize="34px" />
+
+                <RadioButton
+                    android:id="@+id/rb_wx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:background="@drawable/wxconfirm_selector"
+                    android:button="@null"
+                    android:paddingLeft="234px"
+                    android:textColor="@color/black"
+                    android:textSize="44px" />
+
+                <RadioButton
+                    android:id="@+id/rb_zfb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:background="@drawable/zfb_confirm_selector"
+                    android:button="@null"
+                    android:paddingLeft="234px"
+                    android:textColor="@color/black"
+                    android:textSize="44px" />
+
+                <RadioButton
+                    android:id="@+id/rb_yhk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:background="@drawable/yhk_confirm_selector"
+                    android:button="@null"
+                    android:paddingLeft="234px"
+                    android:textColor="@color/black"
+                    android:textSize="44px" />
+
+            </RadioGroup>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </ScrollView>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_pay_confirm"
+            android:layout_width="250px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/btn_orange"
+            android:gravity="center"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:text="付款"
+            android:textColor="@color/white"
+            android:textSize="42px" />
+
+
+        <TextView
+            android:id="@+id/tv_show_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@id/tv_pay_confirm"
+            android:gravity="center"
+            android:padding="10px"
+            android:text="0.00"
+            android:textColor="@color/btn_orange"
+            android:textSize="34px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@id/tv_show_price"
+            android:gravity="center"
+            android:padding="10px"
+            android:text="合计："
+            android:textColor="@color/nine"
+            android:textSize="34px"
+            android:textStyle="bold" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>
+

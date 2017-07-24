@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <!-- 选中时候的图片 -->
+   <!-- <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="3dp"
+        android:maxHeight="9dp"
+        android:maxWidth="9dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/money_pay_type_choose" />-->
+
+    <CheckBox
+        android:id="@+id/money_pay_cb"
+        android:layout_width="218px"
+        android:layout_height="132px"
+        android:layout_gravity="center"
+        android:background="@drawable/money_pay_selector"
+        android:button="@null"
+        android:gravity="center"
+        android:textSize="44px"
+        android:text="500元"
+        android:textColor="@drawable/checkbox_textcolor"
+        />
+
+</com.zhy.autolayout.AutoFrameLayout>

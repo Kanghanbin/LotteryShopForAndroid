@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="20dp"
+    android:paddingTop="16dp">
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/img_select"-->
+        <!--android:layout_width="20dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--style="@style/CustomCheckBoxTheme" />-->
+    <ImageView
+        android:id="@+id/img_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wddd_hzz"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView2" />
+    <TextView
+        android:id="@+id/ticket_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="彩票名称"
+        android:layout_toRightOf="@id/img_ticket"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/three"
+        android:visibility="visible"
+        />
+
+
+
+    <TextView
+        android:id="@+id/ticket_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticket_name"
+        android:text="￥200.00"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/btn_orange"
+        android:layout_alignLeft="@id/ticket_name"
+        />
+    <TextView
+        android:id="@+id/ticket_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/ticket_price"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/btn_orange"
+        android:layout_marginRight="14dp"
+        android:gravity="right"
+        android:text="X1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="合计："
+        android:layout_below="@id/img_ticket"
+        android:textColor="@color/btn_orange"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView2" />
+    <TextView
+        android:id="@+id/num_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200.00"
+        android:layout_below="@id/img_ticket"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/btn_orange"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/num_total_price"
+        android:background="@drawable/ckwl_fgx"
+        android:id="@+id/view">
+
+    </View>
+
+
+</RelativeLayout>

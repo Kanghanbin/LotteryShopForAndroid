@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_top_bar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/topbar_back_selector"
+        android:layout_marginLeft="40px" />
+
+    <TextView
+        android:id="@+id/tv_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@id/iv_top_bar_left"
+        android:text="返回"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_top_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/three"
+        android:textSize="54px" />
+
+
+    <TextView
+        android:id="@+id/tv_top_bar_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40px"
+        android:textColor="@color/three"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textSize="40px" />
+
+    <ImageView
+        android:id="@+id/iv_top_bar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50px" />
+    <TextView
+        android:id="@+id/tv_left_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_top_bar_right"
+        android:layout_marginRight="20px"
+        android:textSize="32px"
+        android:visibility="gone"
+        android:textColor="@color/charge_text"
+        />
+
+
+    <ImageView
+        android:padding="4dp"
+        android:id="@+id/iv_top_bar_warn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40px"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/tv_top_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20px"
+        android:padding="4dp"
+        android:text=""
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/jcp_slbj"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30px"
+        android:visibility="gone" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigationbar"
+        >
+    </View>
+</com.zhy.autolayout.AutoRelativeLayout>

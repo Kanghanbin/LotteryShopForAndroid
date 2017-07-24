@@ -1,0 +1,252 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_trannsfer_out_money"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.jiuyuhulian.lotteryshop.function.TransferOutMoneyActivity">
+
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:background="@color/white"
+        app:centerText="验证信息"
+        app:centerTextColor="@color/three"
+        app:centerTextSize="54px"
+        app:isShowLeft="true"
+        app:leftSrc="@drawable/xgmm_return"></com.jiuyuhulian.lotteryshop.view.TopBar>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/tx_yhbj"
+        android:paddingBottom="22px"
+        android:paddingTop="22px">
+
+        <ImageView
+            android:id="@+id/bank_img"
+            android:layout_width="87px"
+            android:layout_height="87px"
+            android:layout_marginLeft="26px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tx_gsyh" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44px"
+            android:layout_toRightOf="@id/bank_img">
+
+
+        <TextView
+            android:id="@+id/bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工商银行（尾号1234）"
+            android:textColor="@color/three"
+            android:textSize="44px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/bank_name"
+            android:layout_below="@id/bank_name"
+            android:layout_marginTop="24px"
+            android:text="最多支持2000元人民币提现"
+            android:textColor="@color/nine"
+            android:textSize="38px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoRelativeLayout
+           android:id="@+id/arl_tixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="58px">
+
+        <TextView
+            android:id="@+id/tv_tixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:text="提现金额"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/three"/>
+        <TextView
+            android:id="@+id/tv_jine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:text="￥100"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/tv_tixian"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="26px"
+            android:textColor="@color/three"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:layout_toLeftOf="@id/arl_tixian"
+            android:layout_centerVertical="true"
+            android:src="@drawable/yzxx_fgx" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="70px"
+        android:layout_marginTop="46px"
+        android:textSize="34px"
+        android:textColor="@color/btn_orange"
+        android:text="请填写银行卡验证信息"
+        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/tx_khhdz_bj"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="持卡人"
+            android:textColor="@color/three"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="持卡人姓名"
+            android:paddingLeft="46px"
+            android:textColor="@color/nine"
+            android:textSize="40px" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/tx_khhdz_bj"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="身份证"
+            android:textColor="@color/three"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/id_card"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="身份证号码后6位"
+            android:paddingLeft="46px"
+            android:textColor="@color/nine"
+            android:textSize="40px"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/tx_khhdz_bj"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="@color/three"
+            android:textSize="40px" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="银行卡预留手机号"
+            android:paddingLeft="46px"
+            android:textColor="@color/nine"
+            android:textSize="40px"
+            android:inputType="phone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:layout_margin="30px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:gravity="center_vertical"
+        >
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="566px"
+            android:layout_height="wrap_content"
+            android:hint="输入验证码"
+            android:paddingLeft="30px"
+            android:textColor="@color/nine"
+            android:background="@drawable/yzxx_yzm"
+            android:textSize="40px"
+            android:inputType="number"
+         />
+
+        <Button
+            android:id="@+id/getCode"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="26px"
+            android:background="@drawable/yzxx_fsyzm"
+            android:textColor="@color/white"
+            android:text="发送验证码"
+            android:textSize="40px" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_tixian_Sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90px"
+        android:background="@drawable/cz_anniu_bj"
+        android:text="确认提现"
+        android:textColor="@color/white"
+        android:textSize="52px" />
+</com.zhy.autolayout.AutoLinearLayout>

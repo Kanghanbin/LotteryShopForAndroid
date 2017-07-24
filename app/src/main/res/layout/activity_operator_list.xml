@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_operator_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/updatPwd_bg"
+    android:orientation="vertical"
+    tools:context="com.jiuyuhulian.lotteryshop.function.OperatorListActivity">
+
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        app:centerTextSize="54px"
+        app:isShowLeft="true"
+        app:centerText="操作员"
+        app:leftSrc="@drawable/xgmm_return"
+        app:centerTextColor="@color/three"
+        app:rightSrc="@drawable/tj"
+        android:background="@color/updatPwd_bg"
+        app:isShowRight="true"
+        >
+    </com.jiuyuhulian.lotteryshop.view.TopBar>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_Operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</com.zhy.autolayout.AutoLinearLayout>

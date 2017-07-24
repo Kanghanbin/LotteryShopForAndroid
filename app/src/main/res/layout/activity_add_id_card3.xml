@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/updatPwd_bg"
+    android:orientation="vertical"
+    tools:context="com.jiuyuhulian.lotteryshop.function.AddIdCard2Activity">
+
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:background="@color/white"
+        app:centerText="添加银行卡(2/2)"
+        app:centerTextColor="@color/three"
+        app:centerTextSize="54px"
+        app:isShowLeft="true"
+        app:leftSrc="@drawable/xgmm_return"></com.jiuyuhulian.lotteryshop.view.TopBar>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/all_vertify_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30px"
+            android:paddingLeft="40px"
+            android:text="绑定银行卡需要短信确认，验证码已发送至手机：130****8888，请按提示操作。 "
+            android:textColor="@color/nine"
+            android:textSize="42px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:background="@color/white"
+            android:paddingLeft="40px"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textColor="@color/three"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:paddingLeft="40px"
+                android:background="@null"
+                android:inputType="phone"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/yzsjh_fgx">
+
+        </View>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:gravity="center_vertical"
+            android:paddingLeft="40px"
+            android:paddingRight="40px">
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:background="@drawable/yzsjh_txyzm"
+                android:hint="填写验证码"
+                android:paddingLeft="30px"
+                android:inputType="number"
+                android:textColor="@color/nine"
+                android:textSize="36px" />
+
+            <Button
+                android:id="@+id/btn_getCode"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/yzsjh_hqyzm"
+                android:text="获取验证码"
+                android:textColor="@color/nine"
+                android:textSize="36px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@drawable/yzsjh_fgx">
+
+        </View>
+
+
+        <Button
+            android:id="@+id/btn_vertify_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px"
+            android:background="@drawable/xgmm_an_beijing"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="52px" />
+
+        <TextView
+            android:id="@+id/notGetCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:text="收不到验证码？"
+            android:textColor="@color/vertifyCode"
+            android:textSize="36px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

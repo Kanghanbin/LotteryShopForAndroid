@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_finance_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        app:centerTextSize="54px"
+        app:isShowLeft="true"
+        app:centerText="财务设置"
+        app:leftSrc="@drawable/xgmm_return"
+        app:centerTextColor="@color/three"
+        android:background="@color/updatPwd_bg">
+    </com.jiuyuhulian.lotteryshop.view.TopBar>
+</com.zhy.autolayout.AutoLinearLayout>

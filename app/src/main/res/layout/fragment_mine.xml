@@ -1,0 +1,398 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jiuyuhulian.lotteryshop.engine.exchange.MineFragment">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="28px"
+            android:src="@drawable/wode_mendianbianhao" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_num"
+            android:gravity="center"
+            android:text="门店编号"
+            android:textColor="@color/mine_text_black"
+            android:textSize="44px"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_shop_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:text=""
+            android:textColor="@color/btn_orange"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="68px"
+        android:background="@drawable/wode_fengexian">
+
+    </View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="28px"
+            android:src="@drawable/wode_dianzhuxingming" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_name"
+            android:gravity="center"
+            android:text="店主姓名"
+            android:textColor="@color/mine_text_black"
+            android:textSize="44px"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:text=""
+            android:textColor="@color/btn_orange"
+            android:textSize="44px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="68px"
+        android:background="@drawable/wode_fengexian"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_idcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="28px"
+            android:src="@drawable/dianzhu_idcard" />
+
+        <TextView
+            android:id="@+id/tv_Idcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_idcard"
+            android:gravity="center"
+            android:text="店主身份证"
+            android:textColor="@color/mine_text_black"
+            android:textSize="44px"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_shop_idcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:text=""
+            android:textColor="@color/btn_orange"
+            android:textSize="44px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="68px"
+        android:background="@drawable/wode_fengexian"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_caozuoyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="28px"
+            android:src="@drawable/caozuoyuan" />
+
+        <TextView
+            android:id="@+id/tv_caozuoyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_caozuoyuan"
+            android:gravity="center"
+            android:text="操作员"
+            android:textColor="@color/mine_text_black"
+            android:textSize="44px"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:text=""
+            android:textColor="@color/btn_orange"
+            android:textSize="44px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="68px"
+        android:background="@drawable/wode_fengexian"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="28px"
+            android:src="@drawable/wode_keyongyue" />
+
+        <TextView
+            android:id="@+id/tv_yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_yue"
+            android:gravity="center"
+            android:text="可用余额"
+            android:textColor="@color/mine_text_black"
+            android:textSize="44px"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_shop_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:text=""
+            android:textColor="@color/btn_orange"
+            android:textSize="44px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="68px"
+        android:background="@drawable/wode_fengexian"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/arl_update_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_updatPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="28px"
+            android:src="@drawable/wode__xiugaimima" />
+
+        <TextView
+            android:id="@+id/tv_updatePwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_updatPwd"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textColor="@color/mine_text_black"
+            android:textSize="44px"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45px"
+            android:src="@drawable/wode_enter"
+            android:textColor="@color/btn_orange" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="68px"
+        android:background="@drawable/wode_fengexian"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/arl_update_saftyPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_updateSaftyPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="28px"
+            android:src="@drawable/wode_xiugai_anquanmima" />
+
+        <TextView
+            android:id="@+id/tv_updateSaftyPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_updateSaftyPwd"
+            android:gravity="center"
+            android:text="修改财务安全码"
+            android:textColor="@color/mine_text_black"
+            android:textSize="44px"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45px"
+            android:src="@drawable/wode_enter"
+            android:textColor="@color/btn_orange" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="68px"
+        android:background="@drawable/wode_fengexian"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/alr_clear_memory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_clear_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="28px"
+            android:src="@drawable/wode_qlhc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_clear_memory"
+            android:gravity="center"
+            android:text="清理缓存"
+            android:textColor="@color/mine_text_black"
+            android:textSize="44px"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_clear_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:text=""
+            android:textColor="@color/btn_orange"
+            android:textSize="44px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="68px"
+        android:background="@drawable/wode_fengexian"></View>
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wd_anniu_bj"
+        android:layout_marginTop="60px"
+        android:layout_gravity="center_horizontal"
+        android:textSize="52px"
+        android:textColor="@color/white"
+        android:text="退出登录"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

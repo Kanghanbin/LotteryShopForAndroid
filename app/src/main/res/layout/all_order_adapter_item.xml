@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ticket_src"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/wddd_hzz" />
+
+        <TextView
+            android:id="@+id/ticket_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_status"
+            android:layout_toRightOf="@id/ticket_src"
+            android:text="彩票名称"
+            android:textColor="@color/three"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ticket_src"
+            android:layout_toRightOf="@id/ticket_src"
+            android:text="￥200.00"
+            android:textColor="@color/three"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/wddd_ztbj"
+            android:gravity="center"
+            android:text="卖家已发货"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_price"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:textSize="12sp"
+            android:textColor="@color/three"
+            android:text="  x1" />
+
+        <TextView
+            android:id="@+id/tv_freight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_price"
+            android:layout_marginTop="26dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/three"
+            android:layout_marginRight="13dp"
+            android:textSize="10sp"
+            android:text="（含运费￥：0.00） " />
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_freight"
+            android:layout_marginRight="5dp"
+            android:layout_alignBottom="@id/tv_freight"
+            android:text="￥200"
+            android:textSize="12sp"
+            android:textColor="@color/three"/>
+        <TextView
+            android:id="@+id/num_desp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_total"
+            android:layout_marginRight="10dp"
+            android:textSize="10sp"
+            android:layout_alignBottom="@id/tv_total"
+            android:textColor="@color/three"
+            android:text="共1件商品   合计：" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/subline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/wddd_nrq_fgx">
+
+    </View>
+
+
+    <Button
+        android:id="@+id/btn_interflow"
+        android:layout_width="64dp"
+        android:layout_height="22dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/wddd_ckwl"
+        android:text="查看物流"
+        android:textColor="@color/three"
+        android:textSize="12dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/updatPwd_bg"
+        >
+
+    </View>
+
+</LinearLayout>

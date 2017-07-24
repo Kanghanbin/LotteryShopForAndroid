@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.jiuyuhulian.lotteryshop.function.LotteryDetailsActivity">
+
+
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:background="@color/updatPwd_bg"
+        app:centerText="彩票详情"
+        app:centerTextColor="@color/three"
+        app:centerTextSize="54px"
+        app:isShowLeft="true"
+        app:isShowRight="true"
+        app:leftSrc="@drawable/xgmm_return"
+        app:rightSrc="@drawable/jcp_gwc_yixuan">
+
+    </com.jiuyuhulian.lotteryshop.view.TopBar>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="56px"
+            android:paddingLeft="30px"
+            android:paddingTop="23px">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="430px"
+                android:layout_height="430px"
+                android:layout_marginLeft="44px"
+                android:layout_marginTop="27px"
+                android:src="@drawable/zhanwei_detail" />
+
+            <ImageView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jcp_huobao" />
+        </com.zhy.autolayout.AutoFrameLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="68px"
+            android:layout_marginTop="50px"
+            android:layout_toRightOf="@id/frame"
+            android:text="中国红"
+            android:textColor="@color/three"
+            android:textSize="42px" />
+        <TextView
+            android:id="@+id/miane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="面额"
+            android:textColor="@color/nine"
+            android:textSize="32px"
+            android:layout_alignBaseline="@+id/tv_zhang"
+            android:layout_alignBottom="@+id/tv_zhang"
+            android:layout_alignLeft="@+id/ben"
+            android:layout_alignStart="@+id/ben" />
+        <TextView
+            android:id="@+id/tv_zhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="166px"
+            android:layout_marginLeft="44px"
+            android:layout_toRightOf="@id/miane"
+            android:text="￥ 10:00"
+            android:gravity="center"
+            android:textColor="@color/btn_orange"
+            android:textSize="44px" />
+
+        <TextView
+            android:id="@+id/tv_ben"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12px"
+            android:layout_below="@id/tv_zhang"
+            android:layout_alignLeft="@id/tv_zhang"
+            android:text="10:00"
+            android:textColor="@color/btn_orange"
+            android:textSize="44px" />
+
+        <TextView
+            android:id="@+id/tv_addcar"
+            android:layout_width="214px"
+            android:layout_height="58px"
+            android:layout_alignBottom="@+id/frame"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="76px"
+            android:layout_marginRight="32px"
+            android:background="@drawable/jrgwc" />
+
+
+
+        <TextView
+            android:id="@+id/ben"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一本:"
+            android:textColor="@color/nine"
+            android:textSize="32px"
+            android:layout_alignTop="@+id/tv_ben"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="66px"
+        android:background="@color/updatPwd_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="74px"
+        android:text="彩票介绍"
+        android:textColor="@color/three"
+        android:textSize="38px" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="68px"
+        android:paddingTop="50px">
+
+        <TextView
+            android:id="@+id/tvdesc"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="74px"
+            android:layout_weight="1"
+           />
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/xdh"
+
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66px"
+        android:background="@color/updatPwd_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="94px"
+            android:text="奖级"
+            android:textColor="@color/three"
+            android:textSize="38px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="180px"
+            android:text="中奖金额"
+            android:textColor="@color/three"
+            android:textSize="38px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_prizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54px"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+    </android.support.v7.widget.RecyclerView>
+
+</com.zhy.autolayout.AutoLinearLayout>
+

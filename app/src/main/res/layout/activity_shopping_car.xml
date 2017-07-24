@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_shopping_car"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/updatPwd_bg"
+    tools:context="com.jiuyuhulian.lotteryshop.function.ShoppingCarActivity">
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:background="@color/white"
+        app:centerText="购物车（2）"
+        app:leftSrc="@drawable/xgmm_return"
+        app:isShowRightText="true"
+        app:rightTopText="编辑"
+        app:isShowLeft="true"
+        app:centerTextColor="@color/three"
+        app:centerTextSize="54px"
+        >
+    </com.jiuyuhulian.lotteryshop.view.TopBar>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:background="@color/white"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/wddd_fgx">
+
+    </View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="40px"
+        android:background="@color/white">
+
+
+        <CheckBox
+            android:id="@+id/ck_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            style="@style/CustomCheckBoxTheme"
+            android:textSize="40px"
+            android:gravity="center"
+            android:text="全选"
+            android:checked="true"
+            android:paddingTop="44px"
+            android:paddingLeft="20px"
+            android:paddingBottom="44px"
+            android:drawablePadding="20px"
+            android:textColor="@color/three"
+            android:layout_alignParentLeft="true"/>
+
+
+        <TextView
+            android:id="@+id/tv_settlement"
+            android:layout_width="250px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="结算"
+            android:textSize="42px"
+            android:background="@color/btn_orange"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/freight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/tv_settlement"
+            android:gravity="center"
+            android:textSize="30px"
+            android:layout_marginRight="20px"
+            android:text="不含运费"
+            />
+        <TextView
+            android:id="@+id/tv_show_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/freight"
+            android:gravity="center"
+            android:padding="10px"
+            android:layout_marginRight="20px"
+            android:text="0.00"
+            android:textSize="34px"
+            android:textColor="@color/btn_orange" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/tv_show_price"
+            android:gravity="center"
+            android:padding="10px"
+            android:layout_marginRight="10px"
+            android:text="合计："
+            android:textSize="34px"
+            android:textStyle="bold"
+            android:textColor="@color/nine" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

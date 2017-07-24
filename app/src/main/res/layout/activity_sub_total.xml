@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_shopping_car"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/updatPwd_bg"
+    tools:context="com.jiuyuhulian.lotteryshop.function.ShoppingCarActivity">
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        app:centerText="小计"
+        android:background="@color/updatPwd_bg"
+        app:leftSrc="@drawable/xgmm_return"
+        app:rightSrc="@drawable/xj_delete"
+        app:isShowRight="true"
+        app:isShowRightText="true"
+        app:isShowLeft="true"
+        app:centerTextColor="@color/three"
+        app:centerTextSize="54px"
+        >
+    </com.jiuyuhulian.lotteryshop.view.TopBar>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/gwc_fgx"></View>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

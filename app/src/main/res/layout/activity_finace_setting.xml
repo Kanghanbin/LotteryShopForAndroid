@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_finace_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/updatPwd_bg"
+    android:orientation="vertical"
+    tools:context="com.jiuyuhulian.lotteryshop.function.FinanceSettingActivity">
+
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:background="@color/white"
+        app:centerText="财务设置"
+        app:centerTextColor="@color/three"
+        app:centerTextSize="54px"
+        app:isShowLeft="true"
+        app:leftSrc="@drawable/xgmm_return">
+
+    </com.jiuyuhulian.lotteryshop.view.TopBar>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/all_idcard"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="30px"
+        android:paddingLeft="44px"
+        android:paddingTop="30px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cwsz_idcard" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="绑定银行卡"
+            android:textColor="@color/three"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/all_dj"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="30px"
+        android:paddingLeft="44px"
+        android:paddingTop="30px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cwsz_djxe" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="兑奖限额"
+            android:textColor="@color/three"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/all_adress"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="30px"
+        android:paddingLeft="44px"
+        android:paddingTop="30px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cwsz_shdz" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="收货地址"
+            android:textColor="@color/three"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

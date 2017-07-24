@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_exchange_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.jiuyuhulian.lotteryshop.engine.exchange.ExchangeHomeActivity">
+
+    <com.jiuyuhulian.lotteryshop.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        app:centerTextSize="54px"
+        app:centerTextColor="@color/three">
+
+    </com.jiuyuhulian.lotteryshop.view.TopBar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6px"
+        android:background="@drawable/navigationbar">
+
+    </View>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6px"
+        android:background="@drawable/navigationbar"
+        >
+
+    </View>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_radioGroup"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/id_tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:checked="true"
+            android:button="@null"
+            android:textSize="30px"
+            android:paddingTop="8px"
+            android:drawablePadding="5px"
+            android:paddingBottom="17px"
+            android:textColor="@color/selector_tab_text_color"
+            android:drawableTop="@drawable/dj_selector"
+            android:text="兑奖" />
+
+        <RadioButton
+            android:id="@+id/id_tab2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:button="@null"
+            android:textSize="30px"
+            android:paddingTop="8px"
+            android:drawablePadding="5px"
+            android:paddingBottom="17px"
+            android:textColor="@color/selector_tab_text_color"
+            android:drawableTop="@drawable/gn_selector"
+            android:text="功能" />
+
+        <RadioButton
+            android:id="@+id/id_tab3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textSize="30px"
+            android:paddingTop="8px"
+            android:drawablePadding="5px"
+            android:paddingBottom="17px"
+            android:button="@null"
+            android:textColor="@color/selector_tab_text_color"
+            android:drawableTop="@drawable/wd_selector"
+            android:text="我的" />
+
+
+
+    </RadioGroup>
+
+</com.zhy.autolayout.AutoLinearLayout>

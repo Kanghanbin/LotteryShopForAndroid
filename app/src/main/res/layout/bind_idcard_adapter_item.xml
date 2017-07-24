@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:id="@+id/bankcardView"
+    android:background="@drawable/yhk_blue_bj">
+
+    <ImageView
+        android:id="@+id/bank_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/yhk_logo"/>
+    <TextView
+        android:id="@+id/bank_kind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/bank_img"
+        android:layout_marginLeft="8dp"
+        android:text="交通银行"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/bank_property"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/bank_img"
+        android:layout_below="@id/bank_kind"
+        android:layout_marginLeft="8dp"
+        android:text="储蓄卡"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/bank_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="53dp"
+        android:textColor="@color/white"
+        android:text="4988"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="**** **** ****"
+        android:layout_toLeftOf="@id/bank_num"
+        android:layout_marginRight="4dp"
+        android:textSize="24dp"
+        android:layout_marginTop="57dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

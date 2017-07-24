@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fa">
+
+        <ImageView
+            android:id="@+id/ticket_src"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/zhanwei_order" />
+
+        <TextView
+            android:id="@+id/ticket_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ticket_src"
+            android:layout_toRightOf="@id/ticket_src"
+            android:text="彩票名称"
+            android:textColor="@color/three"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ticket_src"
+            android:layout_toRightOf="@id/ticket_src"
+            android:text="￥200.00"
+            android:textColor="@color/three"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_price"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:text="  x1"
+            android:textColor="@color/three"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/subline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ticket_src"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/wddd_nrq_fgx">
+
+        </View>
+</RelativeLayout>

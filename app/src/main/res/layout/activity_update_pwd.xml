@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_update_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/updatPwd_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+<com.jiuyuhulian.lotteryshop.view.TopBar
+    android:id="@+id/topbar"
+    android:layout_width="match_parent"
+    android:layout_height="145px"
+    app:centerTextSize="54px"
+    app:isShowLeft="true"
+    app:leftSrc="@drawable/xgmm_return"
+    app:centerTextColor="@color/three"
+    android:background="@color/updatPwd_bg">
+</com.jiuyuhulian.lotteryshop.view.TopBar>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:gravity="center_vertical"
+        android:background="@drawable/xgmm_beijing">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:textColor="@color/three"
+            android:textSize="42px"
+            android:text="原密码"/>
+
+        <EditText
+            android:id="@+id/et_old_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90px"
+            android:textColor="@color/nine"
+            android:textSize="42px"
+            android:background="@null"
+            android:hint="请输入原来的密码"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16px">
+
+    </View>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:gravity="center_vertical"
+        android:background="@drawable/xgmm_beijing">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:textColor="@color/three"
+            android:textSize="42px"
+            android:text="新密码"/>
+
+        <EditText
+            android:id="@+id/et_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90px"
+            android:textColor="@color/nine"
+            android:textSize="42px"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:hint="请输入新设置的密码"
+      />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16px">
+
+    </View>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:gravity="center_vertical"
+        android:background="@drawable/xgmm_beijing">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:textColor="@color/three"
+            android:layout_centerVertical="true"
+            android:textSize="42px"
+            android:text="确认密码"/>
+        <EditText
+            android:id="@+id/et_new_sure_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="282px"
+            android:textColor="@color/nine"
+            android:textSize="42px"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:hint="请再次输入新设置的密码"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="722px"
+        android:layout_height="104px"
+        android:layout_marginTop="70px"
+        android:textColor="@color/white"
+        android:textSize="52px"
+        android:text="确认修改"
+        android:background="@drawable/xgmm_an_beijing"/>
+
+</com.zhy.autolayout.AutoLinearLayout>
